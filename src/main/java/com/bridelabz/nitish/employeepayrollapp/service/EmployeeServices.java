@@ -9,4 +9,5 @@ public interface EmployeeServices {
     Employee getEmployee(Long id);
     Employee addEmployee(String name, double salary);
     void deleteEmployee(Long id);
+    Employee updateEmployeeSalary(Long id, double salary);
 }

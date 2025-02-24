@@ -33,10 +33,23 @@ public class EmployeeServiceImpl implements EmployeeServices{
     }
 
     @Override
+    public Employee updateEmployeeSalary(Long id, double salary) {
+        Employee employee = employeeRepository.findById(id).get();
+        if(employeeRepository.existsById(id)){
+            employee.setSalary(salary);
+            return employeeRepository.save(employee);
+        }else {
+            return null;
+        }
+    }
+
+    @Override
     public void deleteEmployee(Long id) {
         if(employeeRepository.existsById(id)){
             employeeRepository.deleteById(id);
         }
+
+
 
     }
 }

@@ -37,4 +37,10 @@ public class EmployeeController {
         employeeServices.deleteEmployee(id);
         return "redirect:/employee";
     }
+
+    @PutMapping("/update/{id}")
+    public String updateEmployee(@PathVariable Long id, @RequestParam double salary) {
+        employeeServices.updateEmployeeSalary(id, salary);
+        return "redirect:/employee";
+    }
 }

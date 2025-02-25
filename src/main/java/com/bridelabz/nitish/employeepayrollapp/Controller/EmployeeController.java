@@ -3,6 +3,7 @@ package com.bridelabz.nitish.employeepayrollapp.Controller;
 import com.bridelabz.nitish.employeepayrollapp.dto.Employee;
 import com.bridelabz.nitish.employeepayrollapp.repository.EmployeeRepository;
 import com.bridelabz.nitish.employeepayrollapp.service.EmployeeServices;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,20 +27,20 @@ public class EmployeeController {
 
     // Add Employee
     @PostMapping("/add")
-    public String addEmployee(@RequestParam String name, @RequestParam double salary) {
+    public String addEmployee(@Valid  @RequestParam String name, @RequestParam double salary) {
         employeeServices.addEmployee(name, salary);
         return "redirect:/employee";
     }
 
     // Delete Employee
     @GetMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable Long id) {
+    public String deleteEmployee( @Valid @PathVariable Long id) {
         employeeServices.deleteEmployee(id);
         return "redirect:/employee";
     }
 
     @PutMapping("/update/{id}")
-    public void updateEmployee(@PathVariable Long id, @RequestParam double salary) {
+    public void updateEmployee( @Valid @PathVariable Long id,@Valid @RequestParam double salary) {
         employeeServices.updateEmployeeSalary(id, salary);
     }
 }

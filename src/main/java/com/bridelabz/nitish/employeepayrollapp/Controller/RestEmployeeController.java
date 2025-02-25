@@ -2,6 +2,7 @@ package com.bridelabz.nitish.employeepayrollapp.Controller;
 
 import com.bridelabz.nitish.employeepayrollapp.dto.Employee;
 import com.bridelabz.nitish.employeepayrollapp.repository.EmployeeRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +25,7 @@ public class RestEmployeeController {
     }
 
     @PostMapping("/add")
-    public Employee addEmployee(@RequestBody Employee employee) {
+    public Employee addEmployee( @Valid  @RequestBody Employee employee) {
         return employeeRepository.save(employee);
     }
 

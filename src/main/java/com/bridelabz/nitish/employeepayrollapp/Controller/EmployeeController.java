@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/employee")
 public class EmployeeController {
 
@@ -39,8 +39,7 @@ public class EmployeeController {
     }
 
     @PutMapping("/update/{id}")
-    public String updateEmployee(@PathVariable Long id, @RequestParam double salary) {
+    public void updateEmployee(@PathVariable Long id, @RequestParam double salary) {
         employeeServices.updateEmployeeSalary(id, salary);
-        return "redirect:/employee";
     }
 }

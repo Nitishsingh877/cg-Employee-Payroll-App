@@ -1,0 +1,6 @@
+#logging:
+#  level:
+##    root: ERROR
+#    net:
+#    com.bridelabz.nitish.employeepayrollapp: ERROR
+#

@@ -427,3 +427,117 @@
 25:38:25: 13:38:02:920 [http-nio-8080-exec-6] ERROR c.b.n.e.service.EmployeeServiceImpl - Employee with ID 11 not found.
 25:38:25: 13:38:02:920 [http-nio-8080-exec-6] WARN  c.b.n.e.service.EmployeeServiceImpl - Employee with ID 11 not found.
 25:38:25: 13:38:02:920 [http-nio-8080-exec-6] INFO  c.b.n.e.service.EmployeeServiceImpl - Employee with ID 11 not found.
+25:55:25: 14:55:08:718 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 19864 (C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp\target\classes started by NITISH SINGH in C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp)
+25:55:25: 14:55:08:718 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+25:55:25: 14:55:08:900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+25:55:25: 14:55:08:907 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+25:55:25: 14:55:09:089 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+25:55:25: 14:55:09:092 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+25:55:25: 14:55:09:093 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25:55:25: 14:55:09:116 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+25:55:25: 14:55:09:116 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 395 ms
+25:55:25: 14:55:09:184 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+25:55:25: 14:55:09:188 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+25:55:25: 14:55:09:202 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+25:55:25: 14:55:09:203 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+25:55:25: 14:55:09:220 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31ace515
+25:55:25: 14:55:09:221 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+25:55:25: 14:55:09:223 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+25:55:25: 14:55:09:282 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+25:55:25: 14:55:09:292 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+25:55:25: 14:55:09:403 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+25:55:25: 14:55:09:658 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/payroll_service'
+25:55:25: 14:55:09:691 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+25:55:25: 14:55:09:714 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+25:55:25: 14:55:09:718 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 1.049 seconds (process running for 4647.244)
+25:55:25: 14:55:09:720 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+25:55:25: 14:55:11:112 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+25:55:25: 14:55:11:113 [Thread-15] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+25:55:25: 14:55:11:127 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+25:55:25: 14:55:11:129 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+25:55:25: 14:55:11:130 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+25:55:25: 14:55:11:134 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+25:55:25: 14:55:11:209 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 19864 (C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp\target\classes started by NITISH SINGH in C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp)
+25:55:25: 14:55:11:209 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - No active profile set, falling back to 1 default profile: "default"
+25:55:25: 14:55:11:423 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+25:55:25: 14:55:11:433 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+25:55:25: 14:55:11:507 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+25:55:25: 14:55:11:508 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+25:55:25: 14:55:11:508 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25:55:25: 14:55:11:528 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+25:55:25: 14:55:11:528 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 317 ms
+25:55:25: 14:55:11:555 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+25:55:25: 14:55:11:557 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+25:55:25: 14:55:11:563 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+25:55:25: 14:55:11:564 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+25:55:25: 14:55:11:577 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57bf9c56
+25:55:25: 14:55:11:577 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+25:55:25: 14:55:11:579 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+25:55:25: 14:55:11:621 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+25:55:25: 14:55:11:629 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+25:55:25: 14:55:11:686 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+25:55:25: 14:55:11:755 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/payroll_service'
+25:55:25: 14:55:11:765 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+25:55:25: 14:55:11:776 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+25:55:25: 14:55:11:778 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 0.6 seconds (process running for 4649.304)
+25:55:25: 14:55:11:779 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+25:55:25: 14:55:59:767 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+25:55:25: 14:55:59:778 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+25:55:25: 14:55:59:781 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+25:55:25: 14:55:59:781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+25:55:25: 14:55:59:787 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+25:56:25: 14:56:02:512 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+25:56:25: 14:56:02:569 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Starting EmployeePayrollAppApplication using Java 23.0.2 with PID 14000 (C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp\target\classes started by NITISH SINGH in C:\Users\NITISH SINGH\OneDrive\Desktop\Cg-training\EmployeePayrollApp)
+25:56:25: 14:56:02:570 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - The following 1 profile is active: "dev"
+25:56:25: 14:56:02:638 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+25:56:25: 14:56:02:638 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+25:56:25: 14:56:03:346 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+25:56:25: 14:56:03:405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+25:56:25: 14:56:03:985 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+25:56:25: 14:56:03:995 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+25:56:25: 14:56:03:997 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+25:56:25: 14:56:03:997 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+25:56:25: 14:56:04:047 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+25:56:25: 14:56:04:047 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1409 ms
+25:56:25: 14:56:04:204 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+25:56:25: 14:56:04:276 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+25:56:25: 14:56:04:318 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+25:56:25: 14:56:04:578 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+25:56:25: 14:56:04:604 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+25:56:25: 14:56:04:984 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da5d85f
+25:56:25: 14:56:04:986 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+25:56:25: 14:56:05:076 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+25:56:25: 14:56:06:036 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+25:56:25: 14:56:06:091 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+25:56:25: 14:56:06:396 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+25:56:25: 14:56:06:737 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/payroll_service'
+25:56:25: 14:56:06:803 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+25:56:25: 14:56:06:831 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+25:56:25: 14:56:06:848 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+25:56:25: 14:56:06:861 [restartedMain] INFO  c.b.n.e.EmployeePayrollAppApplication - Started EmployeePayrollAppApplication in 4.754 seconds (process running for 5.735)
+25:12:25: 15:12:07:745 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+25:12:25: 15:12:07:762 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+25:12:25: 15:12:07:768 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+25:12:25: 15:12:07:772 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+25:12:25: 15:12:07:781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

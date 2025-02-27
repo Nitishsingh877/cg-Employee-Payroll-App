@@ -41,4 +41,11 @@ public class RestEmployeeController {
        }
        return false;
     }
+
+    @PutMapping("/update/{id}")
+    public EmployeePayrollData updateEmployee( @Valid @PathVariable Long id,@Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {
+          EmployeePayrollData employeePayrollData = new EmployeePayrollData(employeePayrollDTO);
+          employeeRepository.save(employeePayrollData);
+          return employeePayrollData;
+    }
 }

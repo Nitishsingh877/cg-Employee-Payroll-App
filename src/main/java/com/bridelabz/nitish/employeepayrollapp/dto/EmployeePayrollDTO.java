@@ -1,5 +1,6 @@
 package com.bridelabz.nitish.employeepayrollapp.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,10 +21,21 @@ public @ToString class EmployeePayrollDTO {
     @Min(value = 500,message = "min wage should be more than 500")
     public double salary;
 
+    @Pattern(regexp = "male|female",message = "Gender should be male or female")
     public String gender;
+
+    @JsonFormat(pattern = "dd MMM yyyy")
+    @NotNull(message = "start date should be empty.")
+    @PastOrPresent(message = "start date should be past or today!! Enter valid date!")
     public String startDate;
+
+    @NotBlank(message = "note cannot be empty")
     public String note;
+
+    @NotBlank(message = "Profile pic should be present")
     public String profilePic;
+
+    @NotNull(message = "department name should not be empty!")
     public List<String> departments;
 
 

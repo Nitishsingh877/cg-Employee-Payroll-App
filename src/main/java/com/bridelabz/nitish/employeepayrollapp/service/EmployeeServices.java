@@ -12,5 +12,5 @@ public interface EmployeeServices {
     Optional<EmployeePayrollData> getEmployee(int id);
     EmployeePayrollData addEmployee(EmployeePayrollDTO employeePayrollDTO);
     void  deleteEmployee(int id);
-//    EmployeePayrollDTO updateEmployeeSalary(Long id, double salary);
+    EmployeePayrollData updateEmployeeSalary(int id, EmployeePayrollDTO employeePayrollDTO);
 }

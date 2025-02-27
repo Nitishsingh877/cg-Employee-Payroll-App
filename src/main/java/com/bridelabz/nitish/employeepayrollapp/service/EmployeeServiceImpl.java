@@ -19,25 +19,33 @@ public class EmployeeServiceImpl implements EmployeeServices{
     private EmployeeRepository employeeRepository;
 
 //private List<EmployeePayrollData> employeePayrollDataList = new ArrayList<>();
-//   @Override
-//   public List<EmployeePayrollData> getEmployeePayrollDataList() {
-//       return employeeRepository.findAll();
-//   }
-//
-//    @Override
-//    public Optional<EmployeePayrollData> getEmployee(int id) {
-//        return employeeRepository.findById(id);
-//    }
-//
-//    @Override
-//    public void deleteEmployee(int id) {
-//         employeeRepository.deleteById(id);
-//    }
+   @Override
+   public List<EmployeePayrollData> getEmployeePayrollDataList() {
+       return employeeRepository.findAll();
+   }
+
+    @Override
+    public Optional<EmployeePayrollData> getEmployee(int id) {
+        return employeeRepository.findById(id);
+    }
+
+    @Override
+    public void deleteEmployee(int id) {
+         employeeRepository.deleteById(id);
+    }
 
     @Override
     public EmployeePayrollData addEmployee(EmployeePayrollDTO employeePayrollDTO) {
         EmployeePayrollData employeePayrollData = new EmployeePayrollData(employeePayrollDTO);
         log.debug("Employee payroll data: {}", employeePayrollData);
         return employeeRepository.save(employeePayrollData);
+    }
+
+    @Override
+    public EmployeePayrollData updateEmployeeSalary(int empid, EmployeePayrollDTO employeePayrollDTO) {
+       EmployeePayrollData employeePayrollData = this.getEmployee(empid).get();
+       return employeeRepository.save(employeePayrollData);
+
+
     }
 }

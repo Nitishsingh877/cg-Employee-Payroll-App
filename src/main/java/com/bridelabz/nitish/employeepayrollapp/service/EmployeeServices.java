@@ -9,8 +9,12 @@ import java.util.Optional;
 
 public interface EmployeeServices {
     List<EmployeePayrollData> getEmployeePayrollDataList();
+
+    //sql
+    List<EmployeePayrollData> getEmployessByDepartment(String department);
     Optional<EmployeePayrollData> getEmployee(int id);
     EmployeePayrollData addEmployee(EmployeePayrollDTO employeePayrollDTO);
-    void  deleteEmployee(int id);
+    void   deleteEmployee(int id);
     EmployeePayrollData updateEmployeeSalary(int id, EmployeePayrollDTO employeePayrollDTO);
+
 }

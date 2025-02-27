@@ -48,4 +48,9 @@ public class EmployeeServiceImpl implements EmployeeServices{
 
 
     }
+
+    @Override
+    public List<EmployeePayrollData> getEmployessByDepartment(String department) {
+         return employeeRepository.findEmployeeByDepartments(department);
+    }
 }

@@ -48,4 +48,9 @@ public class RestEmployeeController {
           employeeRepository.save(employeePayrollData);
           return employeePayrollData;
     }
+
+    @GetMapping("/dept/{departments}")
+    public List<EmployeePayrollData> getEmployeeByDepartments(@PathVariable("departments") String departments) {
+        return employeeRepository.findEmployeeByDepartments(departments);
+    }
 }

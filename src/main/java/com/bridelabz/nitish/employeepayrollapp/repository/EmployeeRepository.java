@@ -4,7 +4,12 @@ package com.bridelabz.nitish.employeepayrollapp.repository;
 import com.bridelabz.nitish.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.bridelabz.nitish.employeepayrollapp.entities.EmployeePayrollData;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<EmployeePayrollData, Integer> {
+    @Query(value = "select * from employee_payroll, employee_department where employee_id = id and departments = :departments",nativeQuery = true)
+    List<EmployeePayrollData> findEmployeeByDepartments(String departments);
 
 }

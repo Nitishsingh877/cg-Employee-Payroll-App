@@ -1,6 +1,8 @@
 package com.bridelabz.nitish.employeepayrollapp.Controller;
 
-import com.bridelabz.nitish.employeepayrollapp.dto.Employee;
+
+import com.bridelabz.nitish.employeepayrollapp.dto.EmployeePayrollDTO;
+import com.bridelabz.nitish.employeepayrollapp.entities.EmployeePayrollData;
 import com.bridelabz.nitish.employeepayrollapp.repository.EmployeeRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,26 +13,28 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v4/employee")
 public class RestEmployeeController {
-    @Autowired
+
+   @Autowired
     private EmployeeRepository employeeRepository;
 
     @GetMapping("/get/{id}")
-    public Employee getEmployee(@PathVariable("id") Long id) {
+    public EmployeePayrollData getEmployee(@PathVariable("id") int id) {
         return employeeRepository.findById(id).get();
     }
 
     @GetMapping("/get")
-    public List<Employee> getEmployees() {
+    public List<EmployeePayrollData> getEmployees() {
         return employeeRepository.findAll();
     }
 
     @PostMapping("/add")
-    public Employee addEmployee( @Valid  @RequestBody Employee employee) {
-        return employeeRepository.save(employee);
+    public EmployeePayrollData addEmployee(@Valid  @RequestBody EmployeePayrollDTO employeePayrollDTO) {
+        EmployeePayrollData employeePayrollData = new EmployeePayrollData(employeePayrollDTO);
+        return employeeRepository.save(employeePayrollData);
     }
 
     @DeleteMapping("/delete/{id}")
-    public boolean deleteEmployee(@PathVariable("id") Long id) {
+    public boolean deleteEmployee(@PathVariable("id") int id) {
        if(employeeRepository.existsById(id)) {
            employeeRepository.deleteById(id);
            return true;

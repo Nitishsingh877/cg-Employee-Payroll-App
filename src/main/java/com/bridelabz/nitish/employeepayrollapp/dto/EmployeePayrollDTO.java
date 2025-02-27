@@ -10,9 +10,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.time.LocalDate;
 import java.util.List;
 
-
+@Data
 public @ToString class EmployeePayrollDTO {
     @Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$",message = "Employee name is invalid")
     public String name;
@@ -27,7 +28,7 @@ public @ToString class EmployeePayrollDTO {
     @JsonFormat(pattern = "dd MMM yyyy")
     @NotNull(message = "start date should be empty.")
     @PastOrPresent(message = "start date should be past or today!! Enter valid date!")
-    public String startDate;
+    public LocalDate startDate;
 
     @NotBlank(message = "note cannot be empty")
     public String note;
